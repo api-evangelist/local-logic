@@ -1,7 +1,13 @@
 aid: local-logic
 name: Local Logic
-description: Local Logic is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Local Logic is a location intelligence platform for real estate, founded
+  in 2015, that turns 100B+ data points across 250 million addresses in the US and
+  Canada into 18 proprietary location scores, points of interest, demographics, school
+  ratings, market statistics, value drivers, and climate-risk signals. Its REST API
+  at api.locallogic.co exposes Location Scores, Profiles, Geographies, Points of Interest,
+  Demographics, Schools, Value Drivers, Similar Neighborhoods, Location Snapshot, Market
+  Statistics, and Climate Risk endpoints to real estate brokerages, portals, lenders,
+  and proptech platforms, authenticated with a client ID and secret.
 url: https://raw.githubusercontent.com/api-evangelist/local-logic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,17 +15,80 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://locallogic.co/wp-content/uploads/2023/01/local-logic-logo.png
 tags:
 - Company
-apis: []
+- Location Intelligence
+- Real Estate
+- Geospatial
+- Neighborhoods
+- Demographics
+- Points of Interest
+- Proptech
+- Climate Risk
+- Location Scores
+apis:
+- name: Local Logic API
+  description: REST API for location intelligence — location scores, neighborhood profiles,
+    geographies, points of interest, demographics, schools, value drivers, similar
+    neighborhoods, location snapshot, market statistics, and climate risk across the
+    US and Canada. Authenticated with a client ID and secret.
+  humanURL: https://docs.locallogic.co/
+  baseURL: https://api.locallogic.co
+  properties:
+  - type: Documentation
+    url: https://docs.locallogic.co/
+  - type: Authentication
+    url: authentication/local-logic-authentication.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
 common:
 - type: Website
   url: https://locallogic.co
+- type: Documentation
+  url: https://docs.locallogic.co/
+- type: Support
+  url: https://support.locallogic.co/hc/en-us
+- type: Blog
+  url: https://locallogic.co/blog/
+- type: Pricing
+  url: https://locallogic.co/pricing/
+- type: SignUp
+  url: https://neighborhoodintel.locallogic.co/auth/signup
+- type: Login
+  url: https://neighborhoodintel.locallogic.co/auth/login
+- type: TermsOfService
+  url: https://locallogic.co/terms-conditions/
+- type: PrivacyPolicy
+  url: https://locallogic.co/privacy-policy/
+- type: GitHub
+  url: https://github.com/LocalLogic
+- type: Authentication
+  url: authentication/local-logic-authentication.yml
+- type: LLMsTxt
+  url: llms/local-logic-llms.txt
+- type: DomainSecurity
+  url: security/local-logic-domain-security.yml
