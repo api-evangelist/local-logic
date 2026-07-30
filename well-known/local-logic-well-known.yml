@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: searched
+source: probed /.well-known/* on locallogic.co, docs.locallogic.co, api.locallogic.co
+note: >-
+  No /.well-known/ discovery documents are published. api.locallogic.co is fronted by
+  AWS API Gateway + CloudFront and returns 403 to unauthenticated probes. Absence of
+  these documents is valid, expected data.
+hosts:
+- host: https://locallogic.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://docs.locallogic.co
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://api.locallogic.co
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 403

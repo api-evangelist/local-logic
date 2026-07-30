@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.locallogic.co/
+docs: https://docs.locallogic.co/
+summary:
+  types:
+  - clientCredentials
+  api_key_in:
+  - header
+  notes: >-
+    Local Logic API access requires a client ID and secret, issued after booking a
+    demo. Credentials are exchanged for/passed on API requests to the AWS-API-Gateway-fronted
+    host api.locallogic.co. No public OpenAPI specification is published, so scheme
+    details below are captured from the developer documentation rather than derived
+    from a spec.
+schemes:
+- name: ClientCredentials
+  type: apiKey
+  description: A client ID and secret pair, obtained by booking a demo, authorizes requests
+    to the Local Logic API.
+  in: header
+  sources:
+  - https://docs.locallogic.co/
+host: https://api.locallogic.co
+gateway: aws-api-gateway
