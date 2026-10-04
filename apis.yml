@@ -43,10 +43,14 @@ specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 image: https://locallogic.co/wp-content/uploads/2023/01/local-logic-logo.png
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
+x-docs-hosting: vercel
 tags:
 - Company
 - Location Intelligence
-- Real-Estate
+- Real Estate
 - Geospatial
 - Neighborhoods
 - Demographics
@@ -65,6 +69,7 @@ tags_raw:
 - Proptech
 - Climate Risk
 - Location Scores
+- Real-Estate
 apis:
 - name: Local Logic API
   description: REST API for location intelligence — location scores, neighborhood profiles,
